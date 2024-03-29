@@ -1,0 +1,47 @@
+:root{
+  --primary-color: #eee7e1;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat/Montserrat-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat/Montserrat-Light.ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
