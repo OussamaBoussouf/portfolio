@@ -1,7 +1,22 @@
 :root{
   --primary-color: #eee7e1;
+  --secondary-color: #f2f5ea;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+html, body{
+  background-color: var(--secondary-color);
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin-inline: auto;
+}
 
 @font-face {
   font-family: 'Montserrat';
