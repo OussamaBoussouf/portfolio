@@ -1,0 +1,129 @@
+.navbar{
+    padding: 1em;
+}
+
+
+.navbar__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .9rem;
+    padding: 1em;
+    position: relative;
+    background-color: black;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.navbar__container a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__logo{
+    font-family: "Playfair", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar__list{
+    display: none;
+}
+
+
+.navbar__btn{
+    background: transparent;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.navbar__menu{
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    z-index: 10;
+    top: 85%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    border-bottom-left-radius: .9rem;
+    border-bottom-right-radius: .9rem;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.navbar__menu__list{
+    list-style: none;
+}
+
+.navbar__menu__item{
+    margin-block: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar{
+        padding: 1em 0;
+        border-bottom: 1px solid black;
+    }
+
+    .navbar__container{
+        background-color: unset;
+        box-shadow: unset;
+        padding: 1em 2em;
+    }
+
+    .navbar__container a{
+        color: black;
+    }
+
+    .navbar__logo{
+        font-family: "Playfair", sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .navbar__list{
+        display: flex;
+        list-style: none;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .navbar__item{
+        margin-block: 0;
+        margin-inline: 1rem;
+        position: relative;
+    }
+
+    .navbar__item::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 150%;
+        background-color: black;
+        height: 2px;
+        width: 0%;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+    }
+
+    .navbar__item:hover a{
+        font-style: italic;
+    }
+
+    .navbar__item:hover::after{
+        width: 100%;
+    }
+
+    .navbar__btn{
+        display: none;
+    }
+
+    .navbar__menu{
+        display: none;
+    }
+}
+
+/* @media screen and (min-width: 1024px) {
+    .navbar__container{
+        padding: 1em 0;
+    }
+} */
