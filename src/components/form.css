@@ -1,0 +1,81 @@
+.form {
+  font-family: "Playfair", sans-serif;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  border-radius: 1rem;
+  width: 90vw;
+  max-width: 400px;
+}
+
+.form-close{
+    display: flex;
+    align-items: center;
+    float: right;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: color 200ms ease-in, background-color 200ms ease-in;
+}
+
+.form-close:hover{
+    background-color: rgba(255, 255, 255, 0.863);
+    color: black;
+}
+
+.form-title{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-name, .form-email, .form-message {
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: lightgray;
+  border-bottom: 1px solid lightgray;
+  transition: border-bottom 100ms ease-in;
+  resize: none;
+}
+
+.form input:focus, .form textarea:focus{
+    border-bottom: 1px solid #4ee29f;
+}
+
+.form-error{
+  color: red;
+  font-size: .8rem;
+}
+
+.form-submit-container{
+    text-align: center;
+}
+
+
+.form-submit {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8em 3em;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 300ms ease-in;
+}
+
+.form-submit:hover{
+    background-color: #4ee29f;
+}
