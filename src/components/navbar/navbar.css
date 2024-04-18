@@ -68,7 +68,7 @@
     .navbar__container{
         background-color: unset;
         box-shadow: unset;
-        padding: 1em 2em;
+        padding: 0 2em;
     }
 
     .navbar__container a{

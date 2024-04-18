@@ -21,8 +21,8 @@ function Navbar() {
             <a href="#">Developo.</a>
           </div>
           <ul className="navbar__list">
-            {links.map((link) => (
-              <li className="navbar__item">
+            {links.map((link, index) => (
+              <li className="navbar__item" key={index}>
                 <a href="">{link}</a>
               </li>
             ))}
@@ -44,8 +44,8 @@ function Navbar() {
             className="navbar__menu"
           >
             <ul className="navbar__menu__list">
-            {links.map((link) => (
-              <li className="navbar__menu__item">
+            {links.map((link, index) => (
+              <li key={index} className="navbar__menu__item">
                 <a href="">{link}</a>
               </li>
             ))}
