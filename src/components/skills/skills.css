@@ -1,0 +1,43 @@
+.skills{
+    font-family: "Playfair", sans-serif;
+    background-color: white;
+    padding-inline: 1em;
+    padding-block: 3em;
+}
+
+.skills__heading{
+    font-size: 4rem;
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.skills__heading-border{
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .skills__heading{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills__technologies{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills__technologies p{
+        padding-block: 1rem;
+        font-size: 3rem;
+    }
+}

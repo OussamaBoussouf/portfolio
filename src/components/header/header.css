@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.header__description {
+.header__description p {
   max-width: 800px;
 }
 

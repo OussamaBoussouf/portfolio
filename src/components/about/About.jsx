@@ -16,9 +16,7 @@ function About() {
     offset: ["start start", "end start"],
   });
 
-  function useParallax(value, distance) {
-    return useTransform(value, [0, 1], [0, distance]);
-  }
+
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "110%"]);
 
   return (

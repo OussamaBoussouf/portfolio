@@ -16,16 +16,16 @@ function Header() {
               <motion.h1
                 initial={{ y: 190, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1, ease: "backInOut", delay: 0.5 }}
+                transition={{ duration: 1.5, ease: "backInOut", delay: 0.5 }}
               >
-                Nice to meet you! I'm Oussama Boussouf
+                Hi! I'm Oussama Boussouf
               </motion.h1>
             </div>
             <div className="header__description-mask">
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.9, ease: "backInOut" }}
+                transition={{ duration: 1.5, ease: "backInOut" }}
               >
                 I'm a passionate and aspiring junior web developer with a
                 mission to bring creativity and functionality to the digital
