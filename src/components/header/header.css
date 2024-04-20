@@ -1,6 +1,6 @@
 .header__container {
   padding-inline: 1em;
-  height: calc(100dvh - 65px);
+  height: calc(100vh - 65px);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -55,6 +55,8 @@
 }
 
 
+
+
 .contact__form {
   display: grid;
   position: fixed;
@@ -80,7 +82,7 @@
 @media screen and (min-width: 768px) {
   .header__container {
     padding-inline: 2em;
-    /* justify-content: center; */
+    position: relative;
   }
 
   .header__description h1 {
@@ -88,10 +90,19 @@
   }
   .header__description p {
     font-size: 1.2rem;
-    /* background-color: var(--secondary-color);
-    position: relative;
-    z-index: 10; */
   }
+
+  /* .header__profile-image{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100%;
+    max-height: 700px;
+    transform: translateY(-50%);
+    width: 450px;
+    object-fit: cover;
+    clip-path: polygon(34% 0, 100% 0, 100% 100%, 0 100%);
+  } */
 
   .header__btn__group {
     flex-direction: row;

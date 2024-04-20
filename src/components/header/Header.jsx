@@ -1,10 +1,10 @@
 import { useState } from "react";
+import profileImage from "../../assets/images/about_me_img_mobile.jpg";
 import Form from "../Form";
 import "./header.css";
-import {motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Header() {
-
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   return (
@@ -34,9 +34,9 @@ function Header() {
             </div>
             <div className="header__btn__group">
               <motion.button
-                 initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                transition={{duration: 1, ease: "easeIn", delay: 1}}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "easeIn", delay: 1 }}
                 type="button"
                 className="header__cta"
                 onClick={() => setIsFormOpen(true)}
@@ -44,9 +44,9 @@ function Header() {
                 Contact me
               </motion.button>
               <motion.button
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                transition={{duration: 1, ease: "easeIn", delay: 1}}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "easeIn", delay: 1 }}
                 type="button"
                 className="header__cta"
               >

@@ -1,0 +1,74 @@
+.about{
+    background-color: black;
+    color: white;
+    padding-inline: 1em;
+    padding-block: 3em;
+    overflow: hidden;
+}
+
+.about__heading{
+    font-family: "Playfair", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.about__presentation{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    line-height: 150%;
+    word-spacing: .5rem;
+}
+
+.about__profile__image-mobile{
+    background-image: url('../../assets/images/about_me_img_mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1.5rem;
+}
+.about__profile__image-desktop{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .about__container{
+        /* position: fixed;
+        top: 0; */
+        position: relative;
+    }
+
+    .about__heading{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .about__profile-image{
+        height: 200px;
+        background-size:contain;
+        display: inline-block;
+    }
+
+    .about__profile__image-mobile{
+        display: none;
+    }
+
+    .about__profile__image-desktop{
+        display: block;
+        float: left;
+        height: 300px;
+        width: 400px;
+        object-fit: cover;
+        object-position: 20% 40%;
+        margin: 1rem; 
+    }
+    .about__presentation{
+        font-size: 1.5rem;
+        line-height: 180%;
+    }
+}
