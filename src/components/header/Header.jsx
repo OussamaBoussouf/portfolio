@@ -1,5 +1,4 @@
 import { useState } from "react";
-import profileImage from "../../assets/images/about_me_img_mobile.jpg";
 import Form from "../Form";
 import "./header.css";
 import { motion } from "framer-motion";
@@ -8,35 +7,35 @@ function Header() {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   return (
-    <header className="header">
+    <header id="Home" className="header">
       <div className="wrapper">
         <div className="header__container">
           <div className="header__description">
             <div className="header__mask">
               <motion.h1
-                initial={{ y: 190, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.5, ease: "backInOut", delay: 0.5 }}
+                initial={{ y: 220 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+                onTransitionEnd={() => console.log("Hello world")}
               >
                 Hi! I'm Oussama Boussouf
               </motion.h1>
             </div>
             <div className="header__description-mask">
               <motion.p
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.5, ease: "backInOut" }}
+                initial={{ y: 150 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1, ease: "easeInOut" }}
               >
-                I'm a passionate and aspiring junior web developer with a
-                mission to bring creativity and functionality to the digital
-                realm.
+                I'm a passionate and aspiring web developer  with a
+                mission to create dynamic and interactive web applications.
               </motion.p>
             </div>
             <div className="header__btn__group">
               <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeIn", delay: 1 }}
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeIn", delay: 1 }}
                 type="button"
                 className="header__cta"
                 onClick={() => setIsFormOpen(true)}
@@ -44,9 +43,9 @@ function Header() {
                 Contact me
               </motion.button>
               <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeIn", delay: 1 }}
+                initial={{ x: 20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeIn", delay: 1 }}
                 type="button"
                 className="header__cta"
               >
@@ -55,9 +54,14 @@ function Header() {
             </div>
           </div>
           {isFormOpen ? (
-            <div className="contact__form">
+            <motion.div
+              initial={{ height: 0 }}
+              animate={{ height: "100%" }}
+              transition={{ duration: 0.5 }}
+              className="contact__form"
+            >
               <Form onClose={() => setIsFormOpen(false)} />
-            </div>
+            </motion.div>
           ) : null}
         </div>
       </div>

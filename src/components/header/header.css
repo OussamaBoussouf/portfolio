@@ -1,13 +1,11 @@
 .header__container {
   padding-inline: 1em;
-  height: calc(100vh - 65px);
+  height: calc(100vh + 65px);
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-}
-
-.header__description p {
-  max-width: 800px;
+  text-align: center;
 }
 
 .header__mask,
@@ -15,17 +13,22 @@
   overflow: hidden;
 }
 
+
 .header__description h1 {
   margin-bottom: 2rem;
   font-size: 2.8rem;
   text-shadow: 2px;
-  font-family: "Playfair", sans-serif;
+  font-family: "Poppins", sans-serif;
+  line-height: 110%;
+  max-width: 1000px;
 }
 
 .header__description p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 2rem;
   line-height: 180%;
+  max-width: 800px;
+  margin-inline: auto;
 }
 
 .header__btn__group {
@@ -37,7 +40,7 @@
 
 .header__cta {
   padding: 1em 2em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   background-color: var(--secondary-color);
@@ -72,10 +75,7 @@
 @media screen and (min-width: 456px) {
   .header__btn__group {
     flex-direction: row;
-  }
-
-  .header__btn__group {
-    width: max-content;
+    justify-content: center;
   }
 }
 
@@ -92,19 +92,8 @@
     font-size: 1.2rem;
   }
 
-  /* .header__profile-image{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    height: 100%;
-    max-height: 700px;
-    transform: translateY(-50%);
-    width: 450px;
-    object-fit: cover;
-    clip-path: polygon(34% 0, 100% 0, 100% 100%, 0 100%);
-  } */
-
   .header__btn__group {
     flex-direction: row;
   }
 }
+
