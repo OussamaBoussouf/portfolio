@@ -1,11 +1,12 @@
 .form {
-  font-family: "Playfair", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
   padding: 1em;
   border-radius: 1rem;
   width: 90vw;
   max-width: 400px;
+  text-align: left;
 }
 
 .form-close{
@@ -33,7 +34,7 @@
 
 .form-name, .form-email, .form-message {
   margin-bottom: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .form input,
@@ -66,7 +67,7 @@
 
 
 .form-submit {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0.8em 3em;
   font-weight: bold;
   background-color: white;
@@ -76,6 +77,6 @@
   transition: background-color 300ms ease-in;
 }
 
-.form-submit:hover{
+.form-submit:hover:not(:disabled){
     background-color: #4ee29f;
 }

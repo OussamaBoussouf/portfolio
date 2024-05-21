@@ -1,0 +1,138 @@
+.projects {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  position: relative;
+}
+
+.projects__container {
+  background-color: black;
+  padding-inline: 1em;
+  padding-block: 3em;
+  overflow: hidden;
+}
+
+.projects__container::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 99.9%;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.projects__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1em;
+}
+
+.project__container {
+  margin-block: 5rem;
+  padding-inline: 1em;
+}
+
+.project__image {
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.project__desc h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project__stack {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+.project__desc p {
+  margin-bottom: 1rem;
+  line-height: 150%;
+}
+
+.project__desc h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.project__stack li {
+  font-size: 0.9rem;
+  background-color: orangered;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.btn__container {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.admin__credential{
+  list-style: none;
+  margin-bottom: .5rem;
+}
+
+.btn__container a {
+  text-decoration: none;
+}
+
+.btn__container button {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn__container button:active {
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 768px) {
+  .projects__heading {
+    font-size: 4rem;
+  }
+
+  .project__container {
+    padding-inline: 1em;
+  }
+
+  .project__desc h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn__container button:hover {
+    background-color: greenyellow;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project__container {
+    align-items: start;
+    display: flex;
+    gap: 5rem;
+    margin-block: 8rem;
+  }
+
+  .project__image {
+    margin-bottom: 0;
+  }
+}

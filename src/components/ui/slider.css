@@ -1,0 +1,25 @@
+
+.slider__parent{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slick-track{
+    display: flex;
+    align-items: center;
+}
+
+.previous-slider, .next-slider{
+    background-color: black;
+    width: 4rem;
+    height: 4rem;
+    border-width: 0; 
+    flex-shrink: 0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.previous-slider:active, .next-slider:active{
+    transform: scale(0.8);
+}

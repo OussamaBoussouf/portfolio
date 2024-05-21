@@ -1,15 +1,20 @@
 import { useForm } from "react-hook-form";
 import "./form.css";
 import { X } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 function Form({ onClose }) {
   const {
     register,
-    handleSubmit,
     formState: { errors },
+    handleSubmit,
   } = useForm();
+
+  const form = useRef(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -17,14 +22,40 @@ function Form({ onClose }) {
     return () => (document.body.style.overflow = "visible");
   }, []);
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    if (data) {
+      setLoading(true);
+      emailjs
+        .sendForm(
+          "service_b4w274i",
+          "template_5d3emzl",
+          form.current,
+          "ldgxf-CkUImT4swhr"
+        )
+        .then(
+          () => {
+            toast.success("Your message has been sent");
+            onClose();
+          },
+          () => {
+            toast.error("Something went wrong");
+          }
+        )
+        .finally(() => setLoading(false));
+    }
+  };
 
   return (
     <motion.form
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 0.9, type: "spring", stiffness: 80, ease: "easeIn" }}
+      initial={{ x: 1000 }}
+      animate={{ x: 0 }}
+      transition={{
+        duration: 0.9,
+        type: "spring",
+        delay: 0.5,
+      }}
       className="form"
+      ref={form}
       onSubmit={handleSubmit(onSubmit)}
     >
       <button onClick={onClose} className="form-close" type="button">
@@ -32,26 +63,26 @@ function Form({ onClose }) {
       </button>
       <h2 className="form-title">Contact</h2>
       <div className="form-name">
-        <label htmlFor="fullName">Full name :</label> <br />
+        <label htmlFor="user_name">Full name :</label> <br />
         <input
           type="text"
-          {...register("fullName", { required: true })}
-          name="fullName"
+          {...register("user_name", { required: true })}
+          name="user_name"
           placeholder="full name"
         />
-        {errors.fullName && (
+        {errors.user_name && (
           <span className="form-error">The full name is required</span>
         )}
       </div>
       <div className="form-email">
-        <label htmlFor="email">Email :</label> <br />
+        <label htmlFor="user_email">Email :</label> <br />
         <input
           type="text"
-          {...register("email", { required: true })}
-          name="email"
+          {...register("user_email", { required: true })}
+          name="user_email"
           placeholder="xyz@gmail.com"
         />
-        {errors.email && (
+        {errors.user_email && (
           <span className="form-error">The email is required</span>
         )}
       </div>
@@ -68,8 +99,8 @@ function Form({ onClose }) {
         )}
       </div>
       <div className="form-submit-container">
-        <button className="form-submit" type="submit">
-          Send
+        <button className="form-submit" type="submit" disabled={loading}>
+          {loading ? "Sending..." : "Send"}
         </button>
       </div>
     </motion.form>
