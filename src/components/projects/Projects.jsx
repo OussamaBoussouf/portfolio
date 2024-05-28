@@ -10,7 +10,7 @@ const projects = [
     project_title: "Latitude",
     project_image: projectOne,
     project_desc: `Latitude is a clothing e-commerce 
-    site with collections for men and women. It has all the basic functionalities of an e-commerce site: users can add and remove products from their basket, data is retained when the page is refreshed using Redux, and payments are managed using the Stripe API.`,
+    site with collections for men and women. It has all the basic functionalities of an e-commerce site: users can add and remove products from their basket, state is managed using Redux, and payments are managed using the Stripe API.`,
     project_stack: ["React", "Redux", "Tailwind", "Stripe", "Sanity"],
     project_links: {
       preview: "https://latitude-shop.vercel.app/",
@@ -72,7 +72,7 @@ function Projects() {
                   <p>{project.project_desc}</p>
                   {project.project_title === "Flow Jobs" ? (
                     <ul className="admin__credential">
-                      <li>Emial : admin@admin.com</li>
+                      <li>Email : admin@admin.com</li>
                       <li>Password : admin123456789</li>
                     </ul>
                   ) : null}

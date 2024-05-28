@@ -47,7 +47,7 @@ function Form({ onClose }) {
 
   return (
     <motion.form
-      initial={{ x: 1000 }}
+      initial={{ x: "100vmax" }}
       animate={{ x: 0 }}
       transition={{
         duration: 0.9,
