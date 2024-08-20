@@ -527,49 +527,37 @@ export const TOOLS = [
 export const PROJECTS = [
   {
     id: 1,
-    image: "./images/chatlab.jpg",
-    imageList:
-      "./images/project-image-480.jpg 480w, ./images/libro-800.jpg 800w",
     title: "Chatlab",
     description:
       "Chat app that provides a fast way to connect with the people who matter most to you.",
-    stacks: [],
+    stacks: ["React", "Firebase", "Tailwind"],
     preview: "https://chat-lab-brown.vercel.app/",
     code: "https://github.com/OussamaBoussouf/chat-lab",
   },
   {
     id: 2,
-    image: "./images/libro.jpg",
-    imageList:
-      "./images/project-image-480.jpg 480w, ./images/libro-800.jpg 800w",
     title: "Libro",
     description:
       "Easily upload and organize your PDF books in one convenient place with libro.",
-    stacks: [],
+    stacks: ["React", "Typescript", "Firebase", "Tailwind","Zod","imagekit"],
     preview: "https://libro-two.vercel.app/",
     code: "https://github.com/OussamaBoussouf/my-library",
   },
   {
     id: 3,
-    image: "./images/latitude.jpg",
-    imageList:
-      "./images/project-image-480.jpg 480w, ./images/libro-800.jpg 800w",
     title: "Latitude",
     description:
       "Latitude is a clothing e-commerce website where you can find your unique style.",
-    stacks: [],
+    stacks: ["React", "Tailwind", "Sanity", "Stripe"],
     preview: "https://latitude-shop.vercel.app/",
     code: "https://github.com/OussamaBoussouf/ecommerce-website",
   },
   {
     id: 4,
-    image: "./images/rawg.jpg",
-    imageList:
-      "./images/project-image-480.jpg 480w, ./images/libro-800.jpg 800w",
     title: "Rawg",
     description:
       "This website is a clone of the popular RAWG platform that provides a big list of games.",
-    stacks: [],
+    stacks: ["React", "Chakra UI", "Rawg Api"],
     preview: "https://rawg-clone-cyan.vercel.app/",
     code: "https://github.com/OussamaBoussouf/game-lists",
   },

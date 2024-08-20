@@ -21,7 +21,9 @@ export const Button = styled.button`
 
 export const ButtonGroup = styled.div`
   display: flex;
+  justify-content: ${props => props.$justify_content || ""};
   margin-block: ${(props) => props.$my};
   margin-inline: ${(props) => props.$mx};
   gap: ${(props) => props.$gap};
+  margin-top: ${(props) => props.$mt || ""};
 `;

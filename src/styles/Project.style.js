@@ -8,8 +8,6 @@ const fadeIn = keyframes`
 `;
 
 export const ProjectContainer = styled.div`
-  display: flex;
-  flex-direction: column;
   background-color: var(--primary-color);
   padding: 1em;
   gap: 1.5rem;
@@ -18,10 +16,6 @@ export const ProjectContainer = styled.div`
   transform: translate3d(0, 2rem, 0);
   animation: ${fadeIn} 700ms ease-in-out forwards;
   animation-delay: ${(props) => props.$delay};
-  
-  @media screen and (min-width: 1024px) {
-    flex-direction: row;
-  }
 `;
 
 export const ProjectText = styled.p`
@@ -32,17 +26,8 @@ export const ProjectText = styled.p`
 
 export const ProjectHeading = styled.h3`
   color: white;
+  font-size: 1.5rem; 
   margin-bottom: ${props => props.$mb ? props.$mb : ""} ;
-`;
-
-export const Image = styled.img`
-  width: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-  object-position: center;
-  @media screen and (min-width: 1024px) {
-    width: 50%;
-  }
 `;
 
 export const StackList = styled.ul`
@@ -50,7 +35,7 @@ export const StackList = styled.ul`
   gap: 0.8rem;
   flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 2rem;
+  margin-block: 1rem;
 `
 export const Stack = styled.li`
   padding: .5em .5em;
@@ -62,5 +47,4 @@ export const Stack = styled.li`
 export const ProjectDescription = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 `;

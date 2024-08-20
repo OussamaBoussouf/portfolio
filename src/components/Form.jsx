@@ -87,7 +87,7 @@ function Form({ onClose, onSuccess, onError }) {
           />
         </FormGroup>
         <SubmitButton disabled={loading}>
-          {loading ? "Loading..." : "Submit"}
+          {loading ? "Sending..." : "Submit"}
         </SubmitButton>
       </StyledForm>
     </FormContainer>

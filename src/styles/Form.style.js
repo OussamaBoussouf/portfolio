@@ -2,25 +2,22 @@ import styled, { keyframes } from "styled-components";
 
 const fadeIn = keyframes`
   from{
-        transform: translate3d(-50%, 0, 0);
-        opacity: 0;
-     }
-     to{
-        transform: translate3d(-50%, 10%, 0);
-        opacity: 1;
-     }
+    transform: translate(-50%, 0%);
+  } to{
+    transform: translate(-50%, 10%);
+  }
 `;
 
 export const FormContainer = styled.div`
   max-width: 500px;
   width: 80%;
   background-color: white;
-  position: absolute;
+  position: fixed;
   left: 50%;
   z-index: 20;
   border-radius: 5px;
   padding: 2em;
-  animation: ${fadeIn} 700ms ease-in-out forwards;
+  animation: ${fadeIn} 300ms ease-in forwards;
 `;
 
 export const StyledForm = styled.form`
@@ -70,11 +67,10 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   border: none;
 
-  &:disabled{
+  &:disabled {
     background-color: var(--subtext-gray);
     cursor: default;
   }
-
 `;
 
 export const CloseButton = styled.button`
