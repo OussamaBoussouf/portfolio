@@ -41,7 +41,7 @@ export const Stack = styled.li`
   padding: .5em .5em;
   border-radius: 5px;
   font-size: .8rem;
-  background-color: var(--subtext-green);
+  color: white;
 `
 
 export const ProjectDescription = styled.div`

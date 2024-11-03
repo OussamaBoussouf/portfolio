@@ -8,24 +8,40 @@ const fadeIn = keyframes`
   }
 `;
 
+const slideUp = keyframes`
+  to{
+    bottom: 0%;
+  }
+`;
+
 export const FormContainer = styled.div`
-  max-width: 500px;
-  width: 80%;
+  max-width: 1400px;
+  width: 100%;
   background-color: white;
   position: fixed;
   left: 50%;
+  bottom: -70%;
   z-index: 20;
-  border-radius: 5px;
+  transform: translateX(-50%);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   padding: 2em;
-  animation: ${fadeIn} 300ms ease-in forwards;
+  animation: ${slideUp} 500ms ease-in-out forwards;
 `;
 
 export const StyledForm = styled.form`
-  /* padding: 2em; */
+  
+`;
+
+export const FormDivider = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 `;
 
 export const FormGroup = styled.div`
-  margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
 `;
 
 export const Input = styled.input`
@@ -75,8 +91,13 @@ export const SubmitButton = styled.button`
 
 export const CloseButton = styled.button`
   font-size: 1.5rem;
-  background-color: transparent;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
   border: none;
+  padding: 5px;
   cursor: pointer;
   position: absolute;
   right: 0.8rem;

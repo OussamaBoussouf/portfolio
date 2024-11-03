@@ -13,8 +13,8 @@ export const Button = styled.button`
 
 
   &:hover{
-    background-color: var(--subtext-green);
-    color: var(--black);
+    background-color: lightgray;
+    color: black;
   }
 `;
 

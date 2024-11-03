@@ -35,6 +35,19 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--subtext-green);
+  border-radius: 10px;
+}
+
 button{
   font-family: "Inter";
 }
@@ -84,6 +97,10 @@ export const Heading = styled.h1`
   font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: normal;
 `;
+
+export const Link = styled.a`
+  
+`
 
 export const Grid = styled.div`
   display: grid;
