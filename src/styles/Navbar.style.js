@@ -8,10 +8,8 @@ export const StyledNavbar = styled.nav`
 `;
 
 export const Logo = styled.div`
-  cursor: pointer;
-
-  transition: scale 300ms ease-in-out, 
-  rotate 300ms ease-in-out;
+  user-select: none;
+  transition: scale 300ms ease-in-out, rotate 300ms ease-in-out;
 
   &:hover {
     scale: 0.9;

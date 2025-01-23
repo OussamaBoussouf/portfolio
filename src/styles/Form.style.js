@@ -29,9 +29,7 @@ export const FormContainer = styled.div`
   animation: ${slideUp} 500ms ease-in-out forwards;
 `;
 
-export const StyledForm = styled.form`
-  
-`;
+export const StyledForm = styled.form``;
 
 export const FormDivider = styled.div`
   display: flex;
@@ -95,11 +93,15 @@ export const CloseButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 50%;
   border: none;
   padding: 5px;
   cursor: pointer;
   position: absolute;
   right: 0.8rem;
   top: 0.8rem;
+
+  &:hover {
+    background-color: darkgray;
+  }
 `;

@@ -91,6 +91,23 @@ export const BACKEND = [
   {
     icon: (
       <svg
+        width="800px"
+        height="800px"
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="512" cy="512" r="512" style={{ fill: "#13aa52" }} />
+        <path
+          d="M648.86 449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93 12.65-1.41 17.53-13.37 30.29-18.52 14.48-113.54 94.21-121.27 256.37-7.21 151.24 109.25 241.36 125 252.85l1.79 1.27v-.11c.1.76 5 36 8.44 73.34H526a726.68 726.68 0 0 1 13-78.53l1-.65a204.48 204.48 0 0 0 20.11-16.45l.72-.65c33.48-30.93 93.67-102.47 93.08-216.53a347.07 347.07 0 0 0-5.05-56.76zM512.35 659.12s0-212.12 7-212.08c5.46 0 12.53 273.61 12.53 273.61-9.72-1.17-19.53-45.03-19.53-61.53z"
+          style={{ fill: "#fff" }}
+        />
+      </svg>
+    ),
+    label: "MongoDB",
+  },
+  {
+    icon: (
+      <svg
         width="64px"
         height="64px"
         viewBox="0 0 32 32"
@@ -105,6 +122,7 @@ export const BACKEND = [
         ></g>
         <g id="SVGRepo_iconCarrier">
           <title>file_type_firebase</title>
+          image: "./images/sass-landing-project.jpg",
           <path
             d="M5.8,24.6l.17-.237L13.99,9.149l.017-.161L10.472,2.348a.656.656,0,0,0-1.227.207Z"
             fill="#ffc24a"
@@ -546,6 +564,7 @@ export const PROJECTS = [
   {
     id: 1,
     title: "Saas Landing Page",
+    image: "./images/sass-landing-project.jpg",
     description:
       "Landing page with a modern UI and sleek animations, enhancing user engagement and delivering a seamless, visually appealing experience.",
     stacks: ["Next js", "Tailwind"],
@@ -554,7 +573,26 @@ export const PROJECTS = [
   },
   {
     id: 2,
+    title: "Libro",
+    image: "./images/libro-project.jpg",
+    description:
+      "Easily upload and organize your PDF books in one convenient place with libro.",
+    stacks: [
+      "React",
+      "Typescript",
+      "Firebase",
+      "Tailwind",
+      "Zod",
+      "imagekit",
+      "TanStack",
+    ],
+    preview: "https://libro-two.vercel.app/",
+    code: "https://github.com/OussamaBoussouf/my-library",
+  },
+  {
+    id: 3,
     title: "Chatlab",
+    image: "./images/chatlab-project.jpg",
     description:
       "Chat app that provides a fast way to connect with the people who matter most to you.",
     stacks: ["React", "Firebase", "Tailwind"],
@@ -562,17 +600,9 @@ export const PROJECTS = [
     code: "https://github.com/OussamaBoussouf/chat-lab",
   },
   {
-    id: 3,
-    title: "Libro",
-    description:
-      "Easily upload and organize your PDF books in one convenient place with libro.",
-    stacks: ["React", "Typescript", "Firebase", "Tailwind", "Zod", "imagekit"],
-    preview: "https://libro-two.vercel.app/",
-    code: "https://github.com/OussamaBoussouf/my-library",
-  },
-  {
     id: 4,
     title: "Latitude",
+    image: "./images/latitude-project.jpg",
     description:
       "Latitude is a clothing e-commerce website where you can find your unique style.",
     stacks: ["React", "Tailwind", "Redux", "Sanity", "Stripe"],
@@ -582,6 +612,7 @@ export const PROJECTS = [
   {
     id: 5,
     title: "Rawg",
+    image: "./images/rawg-project.jpg",
     description:
       "This website is a clone of the popular RAWG platform that provides a big list of games.",
     stacks: ["React", "Chakra UI", "Rawg Api"],

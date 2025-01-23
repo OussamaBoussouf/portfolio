@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color: #141e1b;
     --black: #252525;
     --subtext-gray: #aeafaf;
-    --subtext-green: #41ffc9;
+    --subtext-green: #bdff00;
     --text-w-opacity: rgb(149, 158, 155);
 }
 
@@ -58,6 +58,9 @@ h1{
     color: white;
 }
 
+ul{
+  list-style-type: none;
+}
 
 @font-face {
     font-family: 'Inter';

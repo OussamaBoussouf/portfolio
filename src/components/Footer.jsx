@@ -5,7 +5,7 @@ function Footer() {
   return (
     <Wrapper>
       <StyledFooter>
-        <Text>2024</Text>
+        <Text>2025</Text>
         <Text>
           Built with <GreenText>React</GreenText> & <GreenText> Styled components</GreenText>
         </Text>

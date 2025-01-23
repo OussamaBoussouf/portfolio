@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  background-color: var(--black);
-  color: white;
+  background-color: var(--subtext-green);
   padding: 1em 2em;
   border-radius: 5px;
   font-size: ${(props) => props.$size || ".8rem"};
@@ -10,11 +9,11 @@ export const Button = styled.button`
   border: none;
   text-decoration: none;
   transition: 300ms ease-in-out;
+  color: black;
 
 
   &:hover{
-    background-color: lightgray;
-    color: black;
+    filter: brightness(80%);
   }
 `;
 
